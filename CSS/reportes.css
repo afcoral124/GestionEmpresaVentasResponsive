@@ -1,0 +1,403 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+  }
+
+  body{
+    font-family: sans-serif;
+    background-color: rgb(45, 65, 92);
+  }
+  .contenedor{
+    margin: auto;
+    display: flex;
+    flex-flow: row wrap;
+    font-weight: bold;
+    background-color: #e4e4e4;
+    box-shadow: rgba(0, 0, 0, 0.5) 20px 20px 10px;
+    border-radius: 10px;
+  }
+  .nav, .titulopage, .contenedorInformacion, .contenedorsegundario{
+    width: 100%;
+  }  
+
+  /*Barra de navegación*/
+.nav{
+    display: flex;
+    justify-content: flex-start;
+    background-color: rgb(43, 43, 43);
+    border-radius: 8px 8px 0px 0px;
+  }
+  .enlaces{
+    width: 40%;
+  }
+  .logo1{
+    width: 60%;
+  }
+  .logo1 img{
+    max-width: 100%;
+    height: 100%;
+    border-radius: 15px;
+  }
+  
+  .boton-menu{
+    float: right;
+    display: flex;
+    justify-content:flex-end;
+    align-items:stretch;
+    width: 40px;
+  }
+  .boton-menu img{
+    max-width: 40px;
+    height: auto;
+    background-color: rgb(171, 171, 171);
+  }
+
+  .efecto{
+    transition: 0.3s ease all;
+  }
+
+  .efecto:hover{
+    background-color: rgb(2, 119, 48);
+  }
+  .ocultar-peq{
+    background-color: rgb(43, 43, 43);
+    text-decoration: none;
+    color: white;
+    display: flex;
+    flex-flow: row wrap;
+    align-items:center;
+    justify-content: flex-start;
+    width: 100%;
+    border-radius: 10px;
+  }
+  /*------------------Barra de navegación pequeño*/
+  .nav-movil{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    /*--------------------Propiedad que oculta el menu */
+    display: none;
+  }
+  /*----------------------Propiedad para mostrar el menu */
+  .mostrar-menu{
+    display: block;
+  }
+  .enlaces-movil{
+    width: 100%;
+    background-color: rgb(43, 43, 43);;
+  }
+  .enlaces-movil a, .aqui{
+    background-color: rgb(43, 43, 43);
+    text-decoration: none;
+    color: white;
+    display: flex;
+    flex-flow: row wrap;
+    align-items:center;
+    justify-content: flex-start;
+    width: 100%;
+    border-radius: 10px;
+  }
+  
+  .aqui{
+    background-color: rgb(123, 209, 144);
+  }
+  
+  img {
+    max-width: 100%;
+  }
+
+  .enlaces a:hover{
+    background-color: rgb(2, 119, 48);
+  }
+  
+  
+  .titulopage{
+    width: 100%;
+    display: flex;
+    justify-content: center; 
+    text-align: center;
+    margin-bottom: 20px;
+    margin-top: 10px;
+  }
+
+  .titulopage .titulo.pagina{
+    background-color: rgb(125, 185, 241);
+    border-radius: 10px 10px 10px;
+    padding : 5px 20px;
+  }
+
+  .contenedorSecundario{
+    width: 90%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .opcionesDeFiltro{
+    width: 90%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    
+  }
+
+  .filtroInicial, .filtroFinal{
+    width: 100%;
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    margin-bottom: 15px;
+    
+  }
+  
+  .filtroInicial h3, .filtroFinal h3{
+    width: 100%;
+    font-size: 1.17em;
+  }
+  .filtroInicial input, .filtroFinal input{
+    width: 100%;
+    font-size: 16px;
+    padding: 6px;
+    border: 1px solid rgb(197, 197, 197);
+    border-radius: 10px;
+  }
+
+  .desplegable{
+    width: 100%;
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    margin-bottom: 15px;
+  }
+  
+  .desplegable h3{
+    width: 100%;
+    font-size: 1.17em;
+  }
+  .desplegable select{
+    width: 100%;
+    font-size: 16px;
+    border-radius: 10px;
+    padding: 6px;
+    border: 1px solid rgb(197, 197, 197);
+    
+  }
+
+  .contenedorBotonConsultar{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+
+  .botonConsultar{
+    font-size: 16px;
+    font-weight: bold;
+    background-color: rgb(125, 185, 241);
+    border-radius: 10px 10px 10px;
+    padding : 5px 20px;
+    border: none;
+    transition: 0.3s ease all;
+  }
+
+  .botonConsultar:hover{
+    background-color: rgb(172, 215, 255);
+    cursor: pointer;
+  }
+
+  .contenedorInformacion {
+    /*border: 1px solid black;*/
+    background-color: rgb(64, 64, 64);
+    flex-direction: column;
+    font-size: 13px;
+    border-radius: 10px;
+    padding: 5px;
+    margin: 20px 0px;
+    display: none;
+    
+  }
+
+  .active{
+    display: block;
+  }
+
+
+  .tituloContenedorInformacion{
+    color:white;
+  }
+
+  .itemInformacion{
+    display: flex;
+    flex-flow: row wrap;
+    background-color: rgb(169, 203, 234);
+    border-radius: 10px;
+    padding: 10px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+  }
+  
+  .parteIzquierdaitemInformacion{
+    width: 100%;
+    display: flex;
+    flex-flow: row wrap;
+  }
+  
+  .titulo.tabla{
+    width: 100%;
+    text-align: left;
+    padding-left: 4px;
+    color: black;
+    
+  }
+  
+  .descripcion{
+    width: 100%;
+  }
+  
+  ul{
+    list-style-type: circle;
+    margin-left: 20px;
+  }
+  
+  
+  .cantidad{
+    width: 50%;
+    padding-right: 4px;
+    text-align: right;
+    border-left: 1px solid rgb(184, 184, 184);
+  }
+  
+  .descripcion{
+    width: 100%;
+  }
+
+  .parteDerecha{
+    display: flex;
+    flex-flow: column wrap;
+    text-align:center;
+    justify-content: space-between;
+    align-content: space-between;
+    padding: 4px;
+  }
+  
+  .parteDerecha h3, .parteIzquierda h3{
+    margin-bottom: 20px;
+  }
+  
+  table{
+    background-color: rgb(169, 203, 234);
+    width: 100%;
+    font-size: 12px;
+    font-weight: 300;
+    border-radius: 10px;
+    padding: 5px;
+    
+    border-collapse: separate;
+    border-spacing: 2px 2px;
+  }
+
+  table caption{
+    color: white;
+    font-size: 20px;
+    padding: 10px 5px;
+    background-color: rgb(64, 64, 64);
+    border-radius: 10px 10px 0px 0px;
+  }
+  
+  tr, th, td{
+    margin: 5px;
+    
+  }
+  
+  td{
+    
+    background-color: rgb(201, 229, 255);
+    text-align: center;
+    border-radius: 5px;
+    padding: 3px;
+  }
+
+  @media(max-width: 600px){
+    .ocultar-peq{
+        display: none;
+    }
+    .nav{
+      height: 40px;
+    }
+    .enlaces{
+        display:flex;
+        align-items: stretch;
+        justify-content: flex-end;
+      }
+    }
+    
+@media (min-width: 601px){
+/*----------------propiedad que oculta el boton menu*/
+  .boton-menu {
+  display: none;
+  }
+/*------------propiedad que oculta el menu a la resolucion*/
+  .nav-movil{
+    display: none;
+  }
+  .nav .logo1{
+    display: flex;
+    justify-content: center;
+  }
+
+  .enlaces{ 
+    display: flex;
+    align-items: stretch;
+    flex-flow: row wrap;
+    width: 75%;
+    height: 100%;
+  }
+
+  .nav{
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+  }
+  .logo1{
+    width: 25%;
+  }
+
+  .enlaces a, .enlaces .aqui{
+    width: auto;
+    padding: 5px;
+  }
+
+  .filtroInicial h3, .filtroFinal h3{
+    width: 30%;
+    
+  }
+  .filtroInicial input, .filtroFinal input{
+    width: 70%;
+  }
+
+  .desplegable h3{
+    width: 30%;
+  }
+  .desplegable select{
+    width: 70%;
+  }
+
+  table{
+    font-size: 16px;
+    font-weight: bold;
+    border-spacing: 10px 10px;
+  }
+
+  .nav{
+    margin-bottom: 5px;
+  }
+
+  .contenedor{
+    max-width: 1100px;
+  }
+
+}

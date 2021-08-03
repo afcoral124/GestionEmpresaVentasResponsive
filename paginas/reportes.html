@@ -1,0 +1,102 @@
+<!DOCTYPE HTML>
+<html>
+  <html lang="es">
+  <head>
+  <meta charset="UTF-8">
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <!--<meta name="description" content="un taller a solucionar">-->
+  <title>Catálogos : Categoria </title>
+  <link rel="stylesheet" href="../CSS/reportes.css">
+  <!--<link rel="shortcut icon" type="image/x-icon" href="imagenes\favicon.ico">-->
+  <!-- <link rel="shortcut icon" href="http://www.wikipedia.org/favicon.ico" /> -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+  </head>
+  <body>
+    <div class="contenedor">
+
+      <div class="nav">
+        <div class="logo1">
+          <a href="home.html"><img src="../imagenes\logo.png" alt="logo ACME" title="logo ACME"></a>
+        </div>
+        <div class="enlaces">
+          <a class="boton-menu" id="boton-menu" href="javascript:void(0)"> <img class="efecto" src="../imagenes/menu.png" alt="imagen menu" title="Desplegar el menu"></a>
+          <a class="ocultar-peq efecto"href="home.html">Home</a>
+          <a class="ocultar-peq efecto"href="catalogos_categorias.html">Catalogos</a>
+          <a class="ocultar-peq efecto"href="operacion_entrada.html">Operación Entrada</a>
+          <a class="ocultar-peq efecto"href="operacion_salida.html">Operación Salida</a>
+          <span class="aqui ocultar-peq" href="#">Reportes</span>
+          <a class="ocultar-peq efecto"href="ordenes_trabajo.html">Ordenes de trabajo</a>
+          <a class="ocultar-peq efecto" href="../index.html">Cerrar Sesión</a>
+        </div>
+      </div>
+
+      <div class="nav-movil">
+        <div class="enlaces-movil">
+          <a class="efecto" href="home.html">Home</a>
+          <a class="efecto" href="catalogos_categorias.html">Catalogos</a>
+          <a class="efecto" href="operacion_entrada.html">Operación Entrada</a>
+          <a class="efecto" href="operacion_salida.html">Operación Salida</a>
+          <span class="aqui efecto" href="#">Reportes</span>
+          <a class="efecto" href="ordenes_trabajo.html">Ordenes de trabajo</a>
+          <a class="efecto" href="../index.html">Cerrar Sesión</a>
+          
+        </div>
+      </div>
+
+      <div class="titulopage">
+        <h1 class="titulo pagina">Reportes</h1>
+      </div>
+
+      <div class="contenedorSecundario">
+          <div class="opcionesDeFiltro">
+
+            <div class="filtroInicial">
+              <h3>Fecha inicial</h3>
+              <input type="date" id="fechaInicial" name="fechaini" value="2021-01-01" min="2021-01-01" max="2030-12-31">
+            </div>
+
+            <div class="filtroFinal">
+              <h3>Fecha final</h3>
+              <input type="date" id="fechaFinal" name="fechaini" value="2021-12-31" min="2021-01-01" max="2030-12-31">
+            </div>
+
+            <div class="desplegable">
+              <h3>Seleccione el reporte:</h3>
+              <select class="reporte" id="reporte" name="reporte">
+                <option value="0" selected="selected"> - Seleccione el tipo de reporte -</option>
+                <option value="1">Reporte inventario</option>
+                <option value="2">Reporte ventas y compras totales</option>
+                <option value="3">Reporte Ordenes de trabajo</option>
+              </select>
+            </div>
+
+            <div class="contenedorBotonConsultar">
+              <input class="botonConsultar" type="button" onclick="buscarPorFechas()" name="button" value="Consultar">
+            </div>
+
+          </div>
+
+        
+
+        <div class="contenedorInformacion" id="contenedorInformacion1">
+
+        </div>
+
+        <div class="contenedorInformacion" id="contenedorInformacion2">
+
+        </div>
+
+          <div class="contenedorInformacion" id="contenedorInformacion3">
+             
+          </div>
+
+      <div class="contenedorInformacion" id="contenedorInformacion4">
+          
+      </div>
+
+      </div>
+    </div>
+  </body>
+  <script src="../js/menuResponsive.js" charset="utf-8"></script>
+  <script src="../js/reportes.js" charset="utf-8"></script>
+</html>

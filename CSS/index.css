@@ -1,0 +1,193 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  font-family: sans-serif;
+  background-color: rgb(77, 77, 77)
+}
+.contenedor{
+  display: flex;
+  flex-flow: row wrap;
+  font-weight: bold;
+  background-image: url(../imagenes/indexfondo.jpg);
+  color: white;
+  box-shadow: rgba(0, 0, 0, 0.5) 20px 20px 10px;
+
+}
+.logo, .nav, .informacion, .imagen, .mensaje {
+  width: 100%;
+}
+
+.nav{
+background-color: rgb(43, 43, 43);
+}
+
+.nav a{
+  background-color: rgb(43, 43, 43);
+  width: 33%;
+  height: 100%;
+  text-decoration: none;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.nav a:hover{
+  background-color: rgb(2, 119, 48);
+}
+
+.mensaje{
+  display: flex;
+  justify-content:flex-end;
+  opacity:0;
+  transition: 0.8s ease all;
+  transform: scale(0.7);
+}
+
+.texto{
+  display: flex;
+  justify-content: center;
+  background: rgb(240, 0, 0);
+  width: 100%;
+}
+/* Ocultar el msj de logueo */
+.mensaje.active{
+  opacity: 1;
+  transform: scale(1);
+}
+
+.logo{
+  margin-bottom: 15px;
+  margin-top: 15px;
+}
+
+.imagen{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.login{
+  display: flex;
+
+  justify-content: center;
+  align-items: stretch;
+  width: 100%;
+  height: 100%;
+  background-color: rgb(64, 64, 64);
+  padding: 2px;
+
+}
+
+fieldset{
+
+  width: 100%;
+  border-radius: 5px;
+  display: flex;
+  flex-flow: row wrap;
+}
+.login form legend {
+  font-size: 20px;
+  text-align: center;
+}
+
+.barras{
+  width: 90%;
+  font-size: 13px;
+  padding:8px;
+  border-radius: 10px;
+  border:none;
+  margin:5px;
+}
+.boton{
+  width: 40%;
+  font-size: 13px;
+  padding:8px;
+  font-weight: bold;
+  background-color: rgb(55, 150, 47);
+  text-decoration: none;
+  color: rgb(238, 238, 238);
+  border-radius: 15px;
+  border: none;
+  margin: auto;
+  margin-top:5px;
+  margin-bottom: 5px;
+  transition: 0.3s ease all;
+}
+
+.boton:hover{
+  background-color: rgb(116, 214, 107);
+
+}
+
+
+.caja{
+  width: 6%;
+  text-align: left;
+}
+.nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.informacion p {
+  margin-left: 15px;
+  text-align: justify;
+}
+.informacion h2{
+  text-align: center;
+}
+img {
+
+  max-width: 100%;
+  border-radius: 20px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+}
+
+
+@media (min-width: 600px) {
+   .informacion, .imagen, .login{
+    width: 50%;
+  }
+  .logo{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+  }
+  .nav {
+    display: flex;
+    order: -1;
+    justify-content: space-around;
+    align-items: center;
+    width: 50%;
+  }
+  .boton{
+    width: 124px;
+    font-size: 13px;
+    padding:8px;
+
+    margin-left: 10px;
+  }
+  .login span {
+    font-size: 9px;
+  }
+  .barras{
+    width: 33%;
+    font-size: 13px;
+    padding:8px;
+  }
+  .login {order: 0;}
+  .logo{order: 1;}
+  .imagen{order:2;}
+  .informacion {order:2;}
+
+  .texto{
+    width: 50%;
+  }
+}

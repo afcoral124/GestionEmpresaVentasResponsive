@@ -1,0 +1,71 @@
+<!DOCTYPE HTML>
+<html>
+  <html lang="es">
+  <head>
+  <meta charset="UTF-8">
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <!--<meta name="description" content="un taller a solucionar">-->
+  <title>Catálogos : Categoria </title>
+  <link rel="stylesheet" href="../CSS/ordenes.css">
+  <!--<link rel="shortcut icon" type="image/x-icon" href="imagenes\favicon.ico">-->
+  <!-- <link rel="shortcut icon" href="http://www.wikipedia.org/favicon.ico" /> -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+  </head>
+  <body>
+    <div class="contenedor">
+
+      <div class="nav">
+        <div class="logo1">
+          <a href="home.html"><img src="../imagenes\logo.png" alt="logo ACME" title="logo ACME"></a>
+        </div>
+        <div class="enlaces">
+          <a class="boton-menu" id="boton-menu" href="javascript:void(0)"> <img class="efecto" src="../imagenes/menu.png" alt="imagen menu" title="Desplegar el menu"></a>
+          <a class="ocultar-peq efecto"href="home.html">Home</a>
+          <a class="ocultar-peq efecto rol"href="catalogos_categorias.html">Catalogos</a>
+          <a class="ocultar-peq efecto rol"href="operacion_entrada.html">Operación Entrada</a>
+          <a class="ocultar-peq efecto"href="operacion_salida.html">Operación Salida</a>
+          <a class="ocultar-peq efecto rol"href="reportes.html">Reportes</a>
+          <span class="aqui ocultar-peq efecto" href="#">Ordenes de trabajo</span>
+          <a class="ocultar-peq efecto" href="../index.html">Cerrar Sesión</a>
+        </div>
+      </div>
+
+      <div class="nav-movil">
+        <div class="enlaces-movil">
+          <a class="efecto" href="home.html">Home</a>
+          <a class="efecto rol" href="catalogos_categorias.html">Catalogos</a>
+          <a class="efecto rol" href="operacion_entrada.html">Operación Entrada</a>
+          <a class="efecto" href="operacion_salida.html">Operación Salida</a>
+          <a class="efecto rol" href="reportes.html">Reportes</a>
+          <span class="aqui efecto" href="#">Ordenes de trabajo</span>
+          <a class="efecto" href="../index.html">Cerrar Sesión</a>
+        </div>
+      </div>
+
+      <div class="titulopage">
+        <h1>Ordenes de trabajo</h1>
+      </div>
+
+      <div class="contenedorSecundario">
+
+        <div class="registrarinfosup">
+          <div class="labels">
+            <h3>Seleccione el cliente:</h3>
+          </div>
+          <div class="llenables">
+            <select class="clientes" id="clientes" name="cliente" onchange="imprimirOrdenes()">
+              <option value="" selected="selected"> - selecciona -</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="contenedorInformacion" id="contenedorInformacion"> </div>
+        
+        </div>
+      </div>
+    </div>
+  </body>
+  <script src="../js/menuResponsive.js" charset="utf-8"></script>
+  <script src="../js/ordenes.js" charset="utf-8"></script>
+
+</html>

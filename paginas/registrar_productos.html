@@ -1,0 +1,145 @@
+<!DOCTYPE HTML>
+<html>
+  <html lang="es">
+  <head>
+  <meta charset="UTF-8">
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <!--<meta name="description" content="un taller a solucionar">-->
+  <title>Catálogos : Categoria </title>
+  <link rel="stylesheet" href="../CSS/registrar.css">
+  <!--<link rel="shortcut icon" type="image/x-icon" href="imagenes\favicon.ico">-->
+  <!-- <link rel="shortcut icon" href="http://www.wikipedia.org/favicon.ico" /> -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+  </head>
+  <body>
+    <div class="contenedor">
+
+      <div class="nav">
+        <div class="logo1">
+            <img src="../imagenes\logo.png" alt="logo ACME" title="logo ACME">
+        </div>
+        <div class="enlaces">
+          <a class="boton-menu" id="boton-menu" href="javascript:void(0)"> <img class="efecto" src="../imagenes/menu.png" alt="imagen menu" title="Desplegar el menu"></a>
+          <a class="ocultar-peq efecto" href="home.html">Home</a>
+          <span class="aqui ocultar-peq efecto" href="#">Catálogos</span>
+          <a class="ocultar-peq efecto" href="operacion_entrada.html">Operación Entrada</a>
+          <a class="ocultar-peq efecto" href="operacion_salida.html">Operación Salida</a>
+          <a class="ocultar-peq efecto" href="reportes.html">Reportes</a>
+          <a class="ocultar-peq efecto" href="ordenes_trabajo.html">Ordenes de trabajo</a>
+        </div>
+      </div>
+
+      <div class="nav-movil">
+        <div class="enlaces-movil">
+          <a class="efecto" href="home.html">Home</a>
+          <span class="aqui efecto" href="#">Catálogos</span>
+          <a class="efecto" href="operacion_entrada.html">Operación Entrada</a>
+          <a class="efecto" href="operacion_salida.html">Operación Salida</a>
+          <a class="efecto" href="reportes.html">Reportes</a>
+          <a class="efecto" href="ordenes_trabajo.html">Ordenes de trabajo</a>
+        </div>
+      </div>
+
+      <div class="titulopage">
+        <h2>Registrar/Modificar: Producto</h2>
+      </div>
+
+      <div class="contenedorInformacion">
+        <div class="registrarinfosup">
+          <div class="labels">
+            <h3>Código</h3>
+          </div>
+          <div class="llenables">
+            <input type="text" name="codigo" value="" placeholder="Digite Información">
+          </div>
+          <div class="labels">
+            <h3>Nombre de producto</h3>
+          </div>
+          <div class="llenables">
+            <input type="text" name="nombreproducto" value="" placeholder="Digite Información">
+          </div>
+        </div>
+        <div class="registrarinfomed">
+          <div class="labels titulomed">
+            <h3>Categoria</h3>
+          </div>
+          <div class="llenables desplegable1">
+            <select class="categoria" name="categoria">
+              <option value="" selected="selected"> - selecciona -</option>
+              <option value="1">categoria 1</option>
+              <option value="2">categoria 2</option>
+              <option value="3">categoria 3</option>
+              <option value="4">categoria 4</option>
+            </select>
+          </div>
+          <div class="labels titulovitrina">
+            <h3>Ubicación(Vitrina/Bodega)</h3>
+          </div>
+          <div class="llenables desplegable2">
+            <select class="ubicacion" name="ubicacion">
+              <option value="1" selected="selected">Bodega</option>
+              <option value="2">Vitrina</option>
+            </select>
+          </div>
+        </div>
+          <div class="registrarinfoinf">
+            <div class="labels">
+              <h3>Descripción</h3>
+            </div>
+            <div class="llenables">
+              <input type="text" name="descripcion" value="" placeholder="Digite Información">
+            </div>
+            <div class="labels">
+              <h3>Precio de entrada</h3>
+            </div>
+            <div class="llenables">
+              <input type="text" name="precioentrada" value="" placeholder="Digite Información">
+            </div>
+            <div class="labels">
+              <h3>Precio de salida</h3>
+            </div>
+            <div class="llenables">
+              <input type="text" name="preciosalida" value="" placeholder="Digite Información">
+            </div>
+            <div class="labels">
+              <h3>Unidad</h3>
+            </div>
+            <div class="llenables">
+              <input type="text" name="unidad" value="" placeholder="Digite Información">
+            </div>
+            <div class="labels">
+              <h3>Presentación</h3>
+            </div>
+            <div class="llenables">
+              <input type="text" name="presentacion" value="" placeholder="Digite Información">
+            </div>
+            <div class="labels">
+              <h3>Cantidad disponible en el inventario</h3>
+            </div>
+            <div class="llenables">
+              <input type="text" name="presentacion" value="" placeholder="Digite Información">
+            </div>
+            <div class="labels">
+              <h3>Cantidad mínima disponible en el inventario</h3>
+            </div>
+            <div class="llenables">
+              <input type="text" name="presentacion" value="" placeholder="Digite Información">
+            </div>
+            <div class="imagenProducto">
+                <img src="../imagenes\bolsa.png" alt="Imagen Producto" title="Imagen Producto">
+            </div>
+          </div>
+      </div>
+
+      <div class="contenedorsegundario">
+        <div class="botones">
+          <a href="catalogos_categorias.html"><input type="button" name="guardar" value="Guardar"></a>
+          <a href="catalogos_categorias.html"><input type="button" name="cancelar" value="Cancelar"></a>
+        </div>
+
+      </div>
+
+    </div>
+  </body>
+  <script src="../js/menuResponsive.js" charset="utf-8"></script>
+</html>

@@ -1,0 +1,149 @@
+<!DOCTYPE HTML>
+<html>
+  <html lang="es">
+  <head>
+  <meta charset="UTF-8">
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <!--<meta name="description" content="un taller a solucionar">-->
+  <title>Catálogos : Categoria </title>
+  <link rel="stylesheet" href="../CSS/operacion_salida.css">
+  <!--<link rel="shortcut icon" type="image/x-icon" href="imagenes\favicon.ico">-->
+  <!-- <link rel="shortcut icon" href="http://www.wikipedia.org/favicon.ico" /> -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+  </head>
+  <body>
+    <div class="contenedor">
+
+      <div class="nav">
+        <div class="logo1">
+          <a href="home.html"><img src="../imagenes\logo.png" alt="logo ACME" title="logo ACME"></a>
+        </div>
+        <div class="enlaces">
+          <a class="boton-menu" id="boton-menu" href="javascript:void(0)"> <img class="efecto" src="../imagenes/menu.png" alt="imagen menu" title="Desplegar el menu"></a>
+          <a class="ocultar-peq efecto"href="home.html">Home</a>
+          <a class="ocultar-peq efecto rol"href="catalogos_categorias.html">Catalogos</a>
+          <a class="ocultar-peq efecto rol"href="operacion_entrada.html">Operación Entrada</a>
+          <span class="aqui ocultar-peq efecto" href="#">Operación Salida</span>
+          <a class="ocultar-peq efecto rol"href="reportes.html">Reportes</a>
+          <a class="ocultar-peq efecto"href="ordenes_trabajo.html">Ordenes de trabajo</a>
+          <a class="ocultar-peq efecto" href="../index.html">Cerrar Sesión</a>
+        </div>
+      </div>
+
+      <div class="nav-movil">
+        <div class="enlaces-movil">
+          <a class="efecto" href="home.html">Home</a>
+          <a class="efecto rol" href="catalogos_categorias.html">Catalogos</a>
+          <a class="efecto rol" href="operacion_entrada.html">Operación Entrada</a>
+          <span class="aqui efecto" href="#">Operación Salida</span>
+          <a class="efecto rol" href="reportes.html">Reportes</a>
+          <a class="efecto" href="ordenes_trabajo.html">Ordenes de trabajo</a>
+          <a class="efecto" href="../index.html">Cerrar Sesión</a>
+        </div>
+      </div>
+
+      <div class="titulopage">
+        <h2>Operación de salida</h2>
+      </div>
+
+      <div class="contenedorInformacion">
+
+        <div class="registrarinfosup" onclick="quitarAlerta()">
+          <div class="labels">
+            <h3>Seleccione el cliente<span class="rojo">*</span>:</h3>
+          </div>
+          <div class="llenables">
+            <select class="clientes" id="clientes" onchange="verificarOrdenes()" name="proveedor">
+              <option value="" selected="selected"> - selecciona -</option>
+            </select>
+          </div>
+        </div>
+
+
+        <div class="registrarinfosup" onclick="quitarAlerta()">
+          <div class="tituloinfo">
+            <h3>Escoja una Categoría y luego el producto:</h3>
+          </div>
+          <div class="labels">
+            <h3>Categoría<span class="rojo">*</span>:</h3>
+          </div>
+          <div class="llenables">
+            <select class="categoria" id="categorias" onchange="llenarProductos()" name="producto">
+              <option value="" selected="selected"> - selecciona -</option>
+            </select>
+          </div>
+          <div class="labels">
+            <h3>Producto<span class="rojo">*</span>:</h3>
+          </div>
+          <div class="llenables">
+            <select class="producto" id="productos" onchange="validarCantidad()" name="producto">
+              <option value="" selected="selected"> - selecciona -</option>
+            </select>
+          </div>
+        </div>
+        <div class="registrarinfomed"  onclick="quitarAlerta()">
+          <div class="labels titulomed">
+            <h3>Cantidad<span class="rojo">*</span>:</h3>
+          </div>
+          <div class="llenables desplegable1">
+            <input type="number" name="cantidad" value="" id="cantidad" placeholder="Ingrese la Cantidad">
+          </div>
+        </div>
+
+<!--///////////////////////////////////////////-ALERTAS------------------------------->
+        <div class="alertaProducto" id="alertaProducto">
+          <h4>Ingrese Los Campos Requeridos Correctamente</h4>
+        </div>
+        <div class="alertaProducto" id="alertaCantidad">
+          <h4>Ingrese Una Cantidad Valida</h4>
+        </div>
+        <div class="alertaProducto" id="alertaCotizacion">
+          <h4>Ingrese Un Cliente y Productos Validos Para Generar Una Cotizacion</h4>
+        </div>
+  <!--/////////////////////////////////////////////-Fin------------------------------->
+
+        <div class="contenedorBotonAgregar">
+          <input type="button" name="agregar" class="botonAgregar" id="botonAgregar" onclick="validarProducto()" value="Agregar a la Compra">
+        </div>
+
+        <div class="contenedorListaCompras" id="contenedorListaCompras">
+        </div>
+
+        <div class="contenedorBotonAgregar">
+          <input type="button" name="imprimir" class="botonAgregar" id="botonCotizacion" onclick="validarCotizacion()" value="Generar cotización">
+        </div>
+      </div>
+
+      <div class="contenedorsegundario" >
+        <div class="registrarinfoinf" onclick="quitarAlerta()">
+          <div class="labels titulosegundario">
+            <h3>Método de pago<span class="rojo">*</span>:</h3>
+          </div>
+          <div class="llenables listametodos">
+            <select class="metodopago" id="metodopago" name="metodopago">
+              <option value="" selected="selected"> - Opciones -</option>
+              <option value="1">PSE</option>
+              <option value="2">Debito/Crédito</option>
+              <option value="3">Efectivo</option>
+            </select>
+          </div>
+        </div>
+<!--////////////////////////////////ALERTAS//////////////////////////// -->
+        <div class="alertaProveedor" id="alertaPago">
+          <h4>Escoja Un Metodo de Pago </h4>
+        </div>
+        <div class="alertaProveedor" id="alertaPagoCliente">
+          <h4>Escoja Un Cliente </h4>
+        </div>
+<!--///////////////////////////////////FIN////////////////////////////// -->
+          <div class="botonespago">
+            <input type="button" name="guardar" class="botonFinalizar" id="botonFinalizar" onclick="validarPago()" value="Generar orden de trabajo">
+            <a href="home.html"><input type="button" class="botonCancelar" name="cancelar" value="Cancelar"></a>
+          </div>
+      </div>
+    </div>
+  </body>
+  <script src="../js/menuResponsive.js" charset="utf-8"></script>
+  <script src="https://raw.githack.com/eKoopmans/html2pdf/master/dist/html2pdf.bundle.js" charset="utf-8"></script>
+  <script src="../js/operacion_salida.js" charset="utf-8"></script>
+</html>

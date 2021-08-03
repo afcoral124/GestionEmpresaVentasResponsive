@@ -1,0 +1,471 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+body{
+  font-family: sans-serif;
+  background-color: rgb(45, 65, 92);
+}
+.contenedor{
+  margin: auto;
+  display: flex;
+  flex-flow: row wrap;
+  font-weight: bold;
+  background-color: #e4e4e4;
+  box-shadow: rgba(0, 0, 0, 0.5) 20px 20px 10px;
+  border-radius: 10px;
+}
+.nav, .titulopage, .contenedorInformacion, .contenedorsegundario{
+  width: 100%;
+}
+
+/*Barra de navegación*/
+.nav{
+  display: flex;
+  justify-content: flex-start;
+  background-color: rgb(43, 43, 43);
+  border-radius: 8px 8px 0px 0px;
+}
+.enlaces{
+  width: 40%;
+}
+.logo1{
+  width: 60%;
+}
+.logo1 img{
+  max-width: 100%;
+  height: 100%;
+  border-radius: 15px;
+}
+
+.boton-menu{
+  float: right;
+  display: flex;
+  justify-content:flex-end;
+  align-items:stretch;
+  width: 40px;
+}
+.boton-menu img{
+  max-width: 40px;
+  height: auto;
+  background-color: rgb(171, 171, 171);
+}
+
+.efecto{
+  transition: 0.3s ease all;
+}
+
+.efecto:hover{
+  background-color: rgb(2, 119, 48);
+}
+.ocultar-peq{
+  background-color: rgb(43, 43, 43);
+  text-decoration: none;
+  color: white;
+  display: flex;
+  flex-flow: row wrap;
+  align-items:center;
+  justify-content: flex-start;
+  width: 100%;
+  border-radius: 10px;
+}
+
+.d-none{
+  display: none;
+  width: 0px;
+  height: 0px;
+  overflow: hidden;
+}
+
+/*------------------Barra de navegación pequeño*/
+.nav-movil{
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  /*--------------------Propiedad que oculta el menu */
+  display: none;
+}
+/*----------------------Propiedad para mostrar el menu */
+.mostrar-menu{
+  display: block;
+}
+.enlaces-movil{
+  width: 100%;
+  background-color: rgb(43, 43, 43);;
+}
+.enlaces-movil a, .aqui{
+  background-color: rgb(43, 43, 43);
+  text-decoration: none;
+  color: white;
+  display: flex;
+  flex-flow: row wrap;
+  align-items:center;
+  justify-content: flex-start;
+  width: 100%;
+  border-radius: 10px;
+}
+
+.aqui{
+  background-color: rgb(123, 209, 144);
+}
+
+img {
+  max-width: 100%;
+}
+
+.imagenProducto{
+  width: 50%;
+  max-width: 150px;
+  margin: auto;
+}
+
+.titulopage{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  margin-bottom: 10px;
+  margin-top: 10px;
+
+}
+
+.titulopage h2{
+  background-color: rgb(125, 185, 241);
+  border-radius: 10px;
+  padding: 5px;
+  color: black;
+  width: 100%;
+}
+
+.registrarinfoinf{
+  padding: 0px 15px;
+}
+.contenedorInformacion{
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  padding: 0px 15px;
+}
+.registrarinfosup, .registrarinfomed, .registrarinfoinf{
+  display: flex;
+  width: 100%;
+  flex-flow: column wrap;
+  font-size: 13px;
+  margin-bottom: 12px;
+}
+
+.contenedorsegundario{
+  display: flex;
+  width: 100%;
+  flex-flow: column wrap;
+  justify-content: space-evenly;
+  font-size: 13px;
+  margin-bottom: 12px;
+}
+
+.registrarinfosup div{
+  margin-top: 5px;
+}
+.registrarinfomed div{
+  margin-top: 5px;
+}
+
+
+.registrarinfoinf div{
+  margin-top: 5px;
+}
+
+.botonespago{
+  display: flex;
+  justify-content: center;
+  margin-bottom: 15px;
+  margin-top: 15px;
+}
+
+.tituloinfo{
+  width: 100%;
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+
+.enlaces a:hover{
+  background-color: rgb(2, 119, 48);
+}
+.labels{
+  width: 30%;
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+.llenables{
+  width: 90%;
+  margin-bottom: 10px;
+}
+
+
+.llenables input, .llenables select {
+  width: 95%;
+  font-size: 16px;
+  border-radius: 10px;
+  border: 1px solid rgb(175, 175, 175);
+  padding: 7px;
+  transition: width 0.4s ease-in-out;
+}
+
+.llenables input:focus {
+  background-color: lightblue;
+  outline: none;
+  width: 100%;
+}
+
+/*///-------------------------Alerta de validacion ------------------------ */
+.alertaProducto{
+  background-color: rgb(201, 29, 29);
+  color: white;
+  width: 100%;
+  display: none;
+  padding-left: 10px;
+}
+
+.alertaProducto.active{
+  display: block;
+}
+
+.alertaProveedor{
+  background-color: rgb(201, 29, 29);
+  color: white;
+  width: 100%;
+  display: none;
+  padding-left: 10px;
+  font-size: 16px;
+}
+
+.alertaProveedor.active{
+  display: block;
+}
+/* ///--------------------------------------------------------------------------------*/
+
+.contenedorBotonAgregar{
+  display: flex;
+  justify-content: center;
+}
+.botonAgregar{
+  margin: 15px;
+  padding: 10px;
+  font-size: 16px;
+  border: none;
+  background-color: rgb(125, 185, 241);
+  color: black;
+  font-family: sans-serif;
+  font-weight: bold;
+  border-radius: 10px;
+  transition: 0.2s ease all;
+}
+
+.botonAgregar:hover{
+  background-color: rgb(173, 215, 255);
+  color:rgb(63, 63, 63);
+}
+
+.contenedorListaCompras{
+  padding: 20px 5px;
+}
+
+table{
+  background-color: rgb(125, 185, 241);
+  width: 100%;
+  margin: auto;
+  border-radius: 10px;
+  padding: 5px;
+  margin-bottom: 10px;
+  color: white;
+  border-collapse: separate;
+  border-spacing: 10px 10px;
+}
+
+td{
+
+  background-color: rgb(173, 215, 255);
+  text-align: center;
+  border-radius: 5px;
+  padding: 3px;
+  color: rgb(36, 36, 36);
+}
+
+.transparente{
+  background-color:rgba(255, 255, 255, 0);
+  width: 20px;
+}
+
+.botonEliminar{
+  background-color: rgb(192, 44, 44);
+  color: #e4e4e4;
+  border: none;
+  padding: 10px;
+  border-radius: 20%;
+  transition: 0.2s ease all;
+}
+.botonEliminar:hover{
+  background-color: rgb(233, 63, 63);
+}
+
+.botonFinalizar{
+  margin: 15px;
+  padding: 10px;
+  font-size: 16px;
+  border: none;
+  background-color: rgb(125, 185, 241);
+  color: black;
+  font-family: sans-serif;
+  font-weight: bold;
+  border-radius: 10px;
+  transition: 0.2s ease all;
+}
+
+.botonFinalizar:hover{
+  background-color: rgb(173, 215, 255);
+  color:rgb(63, 63, 63);
+}
+
+.botonCancelar{
+  margin: 15px;
+  padding: 10px;
+  font-size: 16px;
+  border: none;
+  background-color: rgb(192, 46, 46);
+  color: rgb(255, 255, 255);
+  font-family: sans-serif;
+  font-weight: bold;
+  border-radius: 10px;
+  transition: 0.2s ease all;
+}
+
+.botonCancelar:hover{
+  background-color: rgb(255, 46, 46);
+}
+
+
+.InfoPago{
+  width: 100%;
+  margin: 0px 40px;
+}
+
+.botonespago{
+  width: 100%;
+}
+
+.rojo{
+  color: #ff0000;
+}
+
+@media(max-width: 600px){
+  .ocultar-peq{
+      display: none;
+  }
+  .nav{
+    height: 40px;
+  }
+
+  table{
+    font-size: 12px;
+  }
+
+  .enlaces{
+    display:flex;
+    align-items: stretch;
+    justify-content: flex-end;
+  }
+}
+@media (min-width: 601px){
+/*----------------propiedad que oculta el boton menu*/
+  .boton-menu {
+  display: none;
+  }
+/*------------propiedad que oculta el menu a la resolucion*/
+  .nav-movil{
+    display: none;
+  }
+  .nav .logo1{
+    display: flex;
+    justify-content: center;
+  }
+
+  .enlaces{
+    display: flex;
+    align-items: stretch;
+    flex-flow: row wrap;
+    width: 75%;
+    height: 100%;
+  }
+  .contenedor{
+    max-width: 1100px;
+  }
+
+    .titulopage{
+      margin: 20px;
+    }
+    .titulopage h2{
+      font-size: 2em;
+      width: 50%;
+    }
+
+    .tituloinfo h3{
+      font-size: 20px;
+      margin-top: 20px;
+    }
+
+    .nav{
+      display: flex;
+      flex-flow: row wrap;
+      align-items: center;
+    }
+    .logo1{
+      width: 25%;
+    }
+
+    .enlaces a, .enlaces .aqui{
+      width: auto;
+      padding: 5px;
+    }
+
+    .nav{
+      margin-bottom: 5px;
+    }
+
+    .labels{
+      width: 25%;
+      font-size: 16px;
+    }
+    .llenables{
+      width: 75%;
+      margin-bottom: 10px;
+    }
+
+
+    .llenables input, .llenables select {
+      width: 100%;
+      font-size: 16px;
+    }
+
+    .contenedorBotonAgregar{
+      display: flex;
+      justify-content: center;
+    }
+
+    .contenedorListaCompras{
+      padding: 20px 100px;
+    }
+
+
+   .registrarinfosup, .registrarinfomed, .registrarinfoinf{
+     width:80%;
+     margin: auto;
+     flex-flow: row wrap;
+   }
+
+
+}
