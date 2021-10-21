@@ -22,8 +22,6 @@ document.addEventListener('DOMContentLoaded', function () {
     usuarios.push(admin, operario);
     localStorage.setItem("usuarios",JSON.stringify(usuarios));
 
-
-
 });
 
 function validarFormulario() {
