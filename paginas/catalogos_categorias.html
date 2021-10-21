@@ -70,7 +70,7 @@
         <div class="popup mod-categoria" id="popup-mod-categoria">
           <a onclick="cerrarPopup()" class="cerrar-popup" title="Cerrar" id="cerrar-popup"><i class="fa fa-times"></i></a>
           <h2>Nombre de la Categoría:</h2>
-          <form action="catalogos_categorias.html" onsubmit="return verificarAccion()" method="POST">
+          <form action="catalogos_categorias.html" onsubmit="return verificarAccion()">
             <div class="contenedor-inputs">
               <input type="text" value="" placeholder="Nombre Categoría" id="nombreCategoriaMod" class="inputTexto" required>
             </div>
@@ -85,7 +85,7 @@
         <div class="popup mod-productos" id="popup-mod-productos">
           <a onclick="cerrarPopupProducto()" class="cerrar-popup" title="Cerrar" id="cerrar-popupProducto"><i class="fa fa-times"></i></a>
           <h2>Ingresa los datos del Producto:</h2>
-          <form action="catalogos_categorias.html" onsubmit="return verificarAccionProducto()" method="POST" enctype="multipart/form-data" >
+          <form action="catalogos_categorias.html" onsubmit="return verificarAccionProducto()" enctype="multipart/form-data" >
             <div class="contenedor-inputs">
               <h3>Codigo:</h3>
               <input type="text" value="" placeholder="codigo" id="codigo" class="inputTexto" required>
