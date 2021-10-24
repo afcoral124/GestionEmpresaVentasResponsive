@@ -1,13 +1,21 @@
 # Gestor de Ventas. Test it here: https://afcoral124.github.io/GestionEmpresaVentasResponsive/
 Proyecto HTML+CSS+JS utilizando LocalStorage como almacenamiento para la funcionalidad del sistema que permite gestionar información para una empresa de ventas, tal como el inventario de productos ordenado por categorías, también clientes, proveedores, registro de compras y ventas, y CRUD en todas las funcionalidades.
-El proyecto fué realizado por Andrés Felipe Coral Dávila y Juan Sebastián Betancourt Balanta, como trabajo del curso de Desarrollo Web en su etapa Front-end, y cumple los siguientes requisitos:
+El proyecto fué realizado por Andrés Felipe Coral Dávila y Juan Sebastián Betancourt Balanta, como trabajo del curso de Desarrollo Web en su etapa Front-end, y cumple los siguientes requisitos (Además de tener un diseño responsivo):
+
 -Pagina inicial con información actualizada de los clientes, proveedores, productos del inventario, y reabastecimiento cuando ciertos productos están terminándose.
+
 -Cartera de clientes CRUD.
+
 -Cartera de proveedores CRUD.
+
 -Catálogo de categorías de productos CRUD.
+
 -Listado de productos para cada categoría CRUD.
+
 -Órdenes de Entrada (Compras a proveedores).
+
 -Órdenes de Salida (Ventas a clientes con Carrito, generación de cotización en pdf).
+
 -Reportes de las compras y ventas con filtros de búsqueda-
 
 ![Captura de pantalla (325)](https://user-images.githubusercontent.com/80283644/138577011-c38e8820-c4ad-4325-8d86-3db232970510.png)
