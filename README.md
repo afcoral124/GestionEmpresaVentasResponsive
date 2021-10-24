@@ -28,4 +28,6 @@ El proyecto fué realizado por Andrés Felipe Coral Dávila y Juan Sebastián Be
 ![Captura de pantalla (330)](https://user-images.githubusercontent.com/80283644/138577014-8868d72f-35ac-44c7-93c9-68deb37eedab.png)
 ![Captura de pantalla (331)](https://user-images.githubusercontent.com/80283644/138577015-4f547722-8c71-411d-a407-aaa7ba469674.png)
 ![Captura de pantalla (332)](https://user-images.githubusercontent.com/80283644/138577016-5fe2d0b3-03fa-4d06-9671-5fe9bccdcc43.png)
+![Captura de pantalla (340)](https://user-images.githubusercontent.com/80283644/138578657-ed037b7a-bf31-44dd-8412-82d09c30ad0a.png)
+![Captura de pantalla (341)](https://user-images.githubusercontent.com/80283644/138578658-aba73154-ce00-4715-a2fd-4bdb32c768ce.png)
 
